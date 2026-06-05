@@ -1,7 +1,7 @@
 {
   "name": "@localzet/ui-kit-3",
   "version": "0.1.0",
-  "description": "Zorin UI 3 component kit extracted from the original application.",
+  "description": "Zorin UI 3 component kit",
   "license": "MIT",
   "repository": {
     "type": "git",
