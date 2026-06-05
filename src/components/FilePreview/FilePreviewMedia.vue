@@ -61,6 +61,7 @@ import ImageFile from './Media/ImageFile'
 import Audio from './Media/Audio'
 import Video from './Media/Video'
 import Spinner from '../UI/Others/Spinner'
+import { debounce } from 'lodash'
 import { mapGetters } from 'vuex'
 import { events } from '../../bus'
 
@@ -110,7 +111,7 @@ export default {
 		},
     },
     methods: {
-        checkGroupInView: _.debounce(function () {
+        checkGroupInView: debounce(function () {
             this.files.forEach((file, index) => {
                 let element = document.getElementById(`group-${file.data.id}`).getBoundingClientRect()
                 let scrollBox = document.getElementById('group-box').getBoundingClientRect()

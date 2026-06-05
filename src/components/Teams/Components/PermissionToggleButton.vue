@@ -45,8 +45,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../../sass/zorin-ui/inapp-forms';
-@import '../../../../sass/zorin-ui/forms';
+@use '../../../../sass/zorin-ui/variables' as *;
+@use '../../../../sass/zorin-ui/mixins' as *;
+@use '../../../../sass/zorin-ui/inapp-forms' as *;
+@use '../../../../sass/zorin-ui/forms' as *;
 
 .permission-toggle {
     display: flex;

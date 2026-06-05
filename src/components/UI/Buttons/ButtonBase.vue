@@ -22,8 +22,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../../sass/zorin-ui/variables';
-@import '../../../../sass/zorin-ui/mixins';
+
+@use 'sass:color';
+@use '../../../../sass/zorin-ui/variables' as *;
+@use '../../../../sass/zorin-ui/mixins' as *;
 
 .button-base {
     @include font-size(15);
@@ -111,7 +113,7 @@ export default {
 
     .popup-wrapper {
         .button-base.secondary {
-            background: lighten($dark_mode_foreground, 3%);
+            background: color.adjust($dark_mode_foreground, $lightness: 3%);
         }
     }
 }

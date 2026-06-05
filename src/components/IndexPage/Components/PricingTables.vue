@@ -73,8 +73,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../../sass/zorin-ui/variables';
-@import '../../../../sass/zorin-ui/mixins';
+@use '../../../../sass/zorin-ui/variables' as *;
+@use '../../../../sass/zorin-ui/mixins' as *;
 
 .plans-wrapper {
     box-shadow: 0 7px 20px 5px hsla(220, 36%, 16%, 0.05);

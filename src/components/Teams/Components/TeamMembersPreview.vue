@@ -46,8 +46,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'resources/sass/zorin-ui/_variables';
-@import 'resources/sass/zorin-ui/_mixins';
+@use '../../../../sass/zorin-ui/variables' as *;
+@use '../../../../sass/zorin-ui/mixins' as *;
 
 .team-folder {
     display: flex;

@@ -230,8 +230,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../sass/zorin-ui/inapp-forms';
-@import '../../../sass/zorin-ui/forms';
+@use '../../../sass/zorin-ui/variables' as *;
+@use '../../../sass/zorin-ui/mixins' as *;
+@use '../../../sass/zorin-ui/inapp-forms' as *;
+@use '../../../sass/zorin-ui/forms' as *;
 
 .item-thumbnail {
     margin-bottom: 20px;

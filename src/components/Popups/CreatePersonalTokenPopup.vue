@@ -123,12 +123,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../sass/zorin-ui/inapp-forms';
-@import '../../../sass/zorin-ui/forms';
+
+@use 'sass:color';
+@use '../../../sass/zorin-ui/variables' as *;
+@use '../../../sass/zorin-ui/mixins' as *;
+@use '../../../sass/zorin-ui/inapp-forms' as *;
+@use '../../../sass/zorin-ui/forms' as *;
 
 .dark {
     .info-box {
-        background: lighten($dark_mode_foreground, 3%);
+        background: color.adjust($dark_mode_foreground, $lightness: 3%);
     }
 }
 </style>

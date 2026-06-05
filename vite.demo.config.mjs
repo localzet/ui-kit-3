@@ -7,6 +7,13 @@ export default defineConfig({
     base: process.env.GITHUB_PAGES === 'true' ? '/ui-kit-3/' : '/',
     plugins: [vue()],
     publicDir: 'public',
+    css: {
+        preprocessorOptions: {
+            scss: {
+                api: 'modern-compiler',
+            },
+        },
+    },
     resolve: {
         extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
         alias: {

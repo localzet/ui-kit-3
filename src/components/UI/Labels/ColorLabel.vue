@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../../sass/zorin-ui/variables';
+@use '../../../../sass/zorin-ui/variables' as *;
 
 .color-label {
     &.purple {

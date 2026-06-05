@@ -1,7 +1,7 @@
 // Fonts
-@import './zorin-ui/_variables';
-@import './zorin-ui/_mixins';
-@import './zorin-ui/_vuewind';
+@use './zorin-ui/_variables' as *;
+@use './zorin-ui/_mixins' as *;
+@use './zorin-ui/_vuewind' as *;
 
 #viewport {
   display: flex;

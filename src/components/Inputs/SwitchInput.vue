@@ -39,8 +39,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../sass/zorin-ui/variables';
-@import '../../../sass/zorin-ui/mixins';
+
+@use 'sass:color';
+@use '../../../sass/zorin-ui/variables' as *;
+@use '../../../sass/zorin-ui/mixins' as *;
 
 .input-wrapper {
     display: flex;
@@ -96,7 +98,7 @@ export default {
 
     .popup-wrapper {
         .switch {
-            background: lighten($dark_mode_foreground, 3%);
+            background: color.adjust($dark_mode_foreground, $lightness: 3%);
         }
     }
 }

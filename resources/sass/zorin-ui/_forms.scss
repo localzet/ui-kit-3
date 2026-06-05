@@ -1,5 +1,6 @@
-@import 'variables';
-@import 'mixins';
+@use 'sass:color';
+@use 'variables' as *;
+@use 'mixins' as *;
 
 .form {
   //max-width: 700px;
@@ -321,7 +322,7 @@ input[type="color"] {
     input[type="text"],
     input[type="number"],
     input[type="email"] {
-      background: lighten($dark_mode_foreground, 3%);
+      background: color.adjust($dark_mode_foreground, $lightness: 3%);
     }
   }
 }

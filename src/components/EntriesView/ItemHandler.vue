@@ -206,8 +206,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../sass/zorin-ui/variables';
-@import '../../../sass/zorin-ui/mixins';
+@use '../../../sass/zorin-ui/variables' as *;
+@use '../../../sass/zorin-ui/mixins' as *;
 
 .slide-from-left-move {
     transition: transform 300s ease;

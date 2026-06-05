@@ -150,7 +150,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../sass/zorin-ui/variables';
+@use '../../../sass/zorin-ui/variables' as *;
 
 .menu-bar {
     //background: linear-gradient(180deg, rgba(246, 245, 241, 0.8) 0%, rgba(243, 244, 246, 0.8) 100%);

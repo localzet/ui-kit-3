@@ -69,9 +69,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../sass/zorin-ui/landing-page';
-@import '../../../sass/zorin-ui/variables';
-@import '../../../sass/zorin-ui/mixins';
+@use '../../../sass/zorin-ui/landing-page' as *;
+@use '../../../sass/zorin-ui/variables' as *;
+@use '../../../sass/zorin-ui/mixins' as *;
 
 .features {
     padding-left: 75px;

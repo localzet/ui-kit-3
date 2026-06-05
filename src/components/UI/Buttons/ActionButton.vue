@@ -22,8 +22,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../../sass/zorin-ui/variables';
-@import '../../../../sass/zorin-ui/mixins';
+@use '../../../../sass/zorin-ui/variables' as *;
+@use '../../../../sass/zorin-ui/mixins' as *;
 
 .action-button {
     cursor: pointer;

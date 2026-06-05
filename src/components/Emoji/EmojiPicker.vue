@@ -132,7 +132,7 @@ export default {
         }, 200),
     },
     methods: {
-        checkGroupInView: _.debounce(function () {
+        checkGroupInView: debounce(function () {
             this.emojis.groups.forEach((group) => {
                 let element = document.getElementById(`group-${group.name}`).getBoundingClientRect()
                 let groupBox = document.getElementById('group-box').getBoundingClientRect()

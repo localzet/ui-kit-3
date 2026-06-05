@@ -11,8 +11,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../../sass/zorin-ui/variables';
-@import '../../../../sass/zorin-ui/mixins';
+@use '../../../../sass/zorin-ui/variables' as *;
+@use '../../../../sass/zorin-ui/mixins' as *;
 
 #loading-bar-spinner.spinner {
     left: 50%;

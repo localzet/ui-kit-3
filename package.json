@@ -28,11 +28,11 @@
   ],
   "scripts": {
     "build": "npm run build:lib && npm run build:demo",
-    "build:lib": "vite build",
-    "build:demo": "vite build --config vite.demo.config.js",
-    "dev": "vite --config vite.demo.config.js --host 127.0.0.1",
-    "dev:lib": "vite --host 127.0.0.1",
-    "preview": "vite preview --config vite.demo.config.js --host 127.0.0.1",
+    "build:lib": "vite build --config vite.config.mjs",
+    "build:demo": "vite build --config vite.demo.config.mjs",
+    "dev": "vite --config vite.demo.config.mjs --host 127.0.0.1",
+    "dev:lib": "vite --config vite.config.mjs --host 127.0.0.1",
+    "preview": "vite preview --config vite.demo.config.mjs --host 127.0.0.1",
     "typecheck": "vue-tsc --noEmit --skipLibCheck"
   },
   "peerDependencies": {

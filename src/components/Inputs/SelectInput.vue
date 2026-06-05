@@ -115,8 +115,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../sass/zorin-ui/variables';
-@import '../../../sass/zorin-ui/mixins';
+
+@use 'sass:color';
+@use '../../../sass/zorin-ui/variables' as *;
+@use '../../../sass/zorin-ui/mixins' as *;
 
 /* TODO: refactor to the tailwind */
 
@@ -240,7 +242,7 @@ export default {
 
     .popup-wrapper {
         .input-area {
-            background: lighten($dark_mode_foreground, 3%);
+            background: color.adjust($dark_mode_foreground, $lightness: 3%);
         }
     }
 
@@ -251,7 +253,7 @@ export default {
             border-bottom: none;
 
             &:hover {
-                background: lighten($dark_mode_foreground, 5%);
+                background: color.adjust($dark_mode_foreground, $lightness: 5%);
 
                 .option-icon {
                     path,

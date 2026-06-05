@@ -41,9 +41,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../sass/zorin-ui/variables';
-@import '../../../sass/zorin-ui/mixins';
-@import '../../../sass/zorin-ui/forms';
+@use '../../../sass/zorin-ui/variables' as *;
+@use '../../../sass/zorin-ui/mixins' as *;
+@use '../../../sass/zorin-ui/forms' as *;
 
 .search-bar {
     position: relative;
