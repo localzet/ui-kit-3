@@ -17,6 +17,7 @@ export default defineConfig({
     resolve: {
         extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
         alias: {
+            vue: 'vue/dist/vue.esm.js',
             '@': fileURLToPath(new URL('./src', import.meta.url)),
         },
     },
