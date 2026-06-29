@@ -94,7 +94,7 @@
     "sass": "^1.89.1",
     "tailwindcss": "^3.4.17",
     "tailwindcss-debug-screens": "^2.2.1",
-    "vite": "^5.4.19",
+    "vite": "^6.4.3",
     "vue": "^2.7.16",
     "vue-template-compiler": "^2.7.16",
     "vue-tsc": "^1.8.27"
